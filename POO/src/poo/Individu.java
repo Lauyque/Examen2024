@@ -1,9 +1,9 @@
 package poo;
 
 public abstract class Individu {
-	private String nom;
-	private String prenom;
-	private int identifiant;
+	protected String nom;
+	protected String prenom;
+	protected int identifiant;
 	
 
 	public Individu(String nom, String prenom,int identifiant ) {
