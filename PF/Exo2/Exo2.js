@@ -18,19 +18,15 @@ const list1 = [
     },
 ];
 
-const meeting = (list1) => {
-    const tousRepas = list1.reduce((accumulator, currentValue) => {
-        const a = currentValue.Repas;
-        if (accumulator[a]) {
-            accumulator[a]++;
-        } else {
-            accumulator[a] = 1;
-        }
-        return accumulator;
-    }, {});
-
-    return tousRepas;
-}
+const meeting = (list1) => tousRepas = list1.reduce((accumulator, currentValue) => {
+    const repas = currentValue.Repas;
+    if (accumulator[repas]) {
+        accumulator[repas]++;
+    } else {
+        accumulator[repas] = 1;
+    }
+    return accumulator;
+}, {});
 
 
 console.log(meeting(list1))
