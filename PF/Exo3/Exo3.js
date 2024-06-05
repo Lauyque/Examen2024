@@ -1,10 +1,9 @@
 const longestWord = (mot) => {
     const array = mot.split(" ");
-    console.log(array)
     const initialValue = "";
     const sumWithInitial = array.reduce(
-        (accumulator, currentValue) => {if (accumulator.length <= currentValue.length) { return currentValue } else { return accumulator }},
-            initialValue,
+        (accumulator, currentValue) => { if (accumulator.length <= currentValue.length) { return currentValue } else { return accumulator } },
+        initialValue,
     );
     return sumWithInitial
 }
